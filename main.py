@@ -39,6 +39,7 @@ async def update_index():
         "chunks_created": len(chunks),
     }
 
+
 @app.on_event("startup")
 async def startup_event() -> None:
     """Load the quantised LLM once when the API starts."""
